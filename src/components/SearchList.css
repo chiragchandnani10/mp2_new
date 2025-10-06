@@ -17,23 +17,27 @@
   }
   .search-input {
     flex: 1;
-    padding: 10px 12px;
+    padding: 11px 14px;
     background: #0f1720;
-    border: 1px solid rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
     color: #eaf2ff;
-    border-radius: 6px;
+    border-radius: 8px;
+    transition: border-color 140ms ease, box-shadow 140ms ease;
   }
+  .search-input:focus { outline: none; border-color: rgba(29,185,84,0.6); box-shadow: 0 0 0 2px rgba(29,185,84,0.25); }
   .selects {
     display: flex;
     gap: 8px;
   }
   .select {
-    padding: 8px;
+    padding: 9px 10px;
     background: #0b1116;
-    color: #c7d6e6;
-    border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 6px;
+    color: #cfe0f2;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    transition: border-color 140ms ease, box-shadow 140ms ease;
   }
+  .select:focus { outline: none; border-color: rgba(29,185,84,0.6); box-shadow: 0 0 0 2px rgba(29,185,84,0.25); }
   .result-grid {
     list-style: none;
     padding: 0;

@@ -16,18 +16,21 @@
     margin-bottom: 18px;
   }
   .genre-btn {
-    padding: 8px 10px;
-    border-radius: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
     background: #0d1419;
-    color: #bfcfe0;
-    border: 1px solid rgba(255,255,255,0.03);
+    color: #cfe0f2;
+    border: 1px solid rgba(255,255,255,0.06);
     cursor: pointer;
+    transition: transform 140ms ease, background-color 140ms ease, color 140ms ease, border-color 140ms ease;
   }
   .genre-btn.active {
-    background: #1db954;
+    background: var(--accent);
     color: #071018;
-    border-color: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.12);
   }
+  .genre-btn:hover { transform: translateY(-1px); }
+  .genre-btn:focus { outline: none; box-shadow: 0 0 0 2px rgba(29,185,84,0.25); }
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

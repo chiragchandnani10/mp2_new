@@ -71,11 +71,14 @@
   .nav-btn {
     background: #0b1116;
     color: #e6eef6;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid rgba(255,255,255,0.03);
+    padding: 9px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.06);
     cursor: pointer;
+    transition: transform 140ms ease, background-color 140ms ease, color 140ms ease, border-color 140ms ease;
   }
+  .nav-btn:hover { transform: translateY(-1px); background: #0f1720; }
+  .nav-btn:focus { outline: none; box-shadow: 0 0 0 2px rgba(29,185,84,0.25); }
   .center-message {
     text-align: center;
     color: #9aa6b2;

@@ -22,6 +22,13 @@ export default function App(): React.JSX.Element {
           </Routes>
         </ErrorBoundary>
       </main>
+      <footer className="app-footer">
+        <div className="footer-inner">
+          <span className="footer-brand">CineScape</span>
+          <span className="footer-sep">•</span>
+          <span className="footer-tag">Discover. Save. Rewatch.</span>
+        </div>
+      </footer>
     </div>
   );
 }
