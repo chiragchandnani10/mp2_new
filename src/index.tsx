@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './styles/index.css';
 
+//Added new basename
 const root = document.getElementById('root');
 if (root) {
   ReactDOM.createRoot(root).render(
